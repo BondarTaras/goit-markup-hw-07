@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px){
+    .container {
+    width: 572px;
+  }
+/*------------- Customers------------------------*/
+.customers-list{
+    
+}
+.customers-item{
+    width: calc((100% - 30px) / 3);
+}
+.customers-link{
+   padding-left: 32px;
+   padding-right: 32px; 
+  }
+}

@@ -49,9 +49,12 @@ ul {
 }
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .container {
-  width: 1158px;
+  /* width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -331,8 +334,8 @@ img {
 }
 /*------------- Customers------------------------*/
 .customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-titel {
   font-weight: 700;
@@ -346,11 +349,12 @@ img {
 }
 .customers-list {
   display: flex;
-  gap: 24px;
-}
+  flex-wrap: wrap;
+  }
 .customers-item {
-  width: 168px;
+  width: calc((100% - 30px) / 1);
   height: 88px;
+  margin-bottom: 72px;
 }
 .customers-link {
   width: 100%;
@@ -361,9 +365,9 @@ img {
   align-items: center;
   justify-content: center;
   padding-top: 16px;
-  padding-left: 32px;
+  padding-left: 43px;
   padding-bottom: 16px;
-  padding-right: 32px;
+  padding-right: 43px;
   transition: border-color var(--transf), fill var(--transf);
 }
 .customers-icon {
@@ -389,9 +393,8 @@ img {
 }
 .container-footer {
   display: flex;
-  
 }
-.foter-info{
+.foter-info {
   margin-right: 120px;
 }
 .footer-logo {
@@ -414,7 +417,7 @@ img {
   color: #e7e9fc;
   width: 264px;
 }
-.foter-soc{
+.foter-soc {
   margin-right: 80px;
 }
 .footer-soc-titel {

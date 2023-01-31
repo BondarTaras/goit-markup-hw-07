@@ -1,0 +1,10 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 458px;
+  }
+  /*------------- Customers------------------------*/
+  .customers-item {
+  width: calc((100% - 30px) / 2);
+ 
+}
+}
