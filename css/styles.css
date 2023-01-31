@@ -150,28 +150,38 @@ img {
 .hero {
   max-width: 1440px;
   background-color: var(--color-titel);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: auto;
 }
-.hero-bg {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-mob-2x.jpg);
+  }
 }
+
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 .hero-btn {
   font-weight: 500;
@@ -204,39 +214,35 @@ img {
 }
 /*------------- BENEFITS------------------------*/
 .benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .benefits-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .benefits-icon {
-  margin-bottom: 8px;
-  background: #f4f4fd;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  padding-top: 24px;
-  padding-left: 100px;
-  padding-bottom: 24px;
-  padding-right: 100px;
+  display: none;
 }
 .benefits-item {
-  max-width: 264px;
+  width: 100%;
 }
 
 .benefits-title {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--color-titel);
   margin-bottom: 8px;
+  text-align: center;
 }
 .benefits-after-title {
+  font-weight: 500;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 /*------------- EXAMPLES------------------------*/
 .examples {
@@ -350,11 +356,13 @@ img {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  }
+  justify-content: center;
+}
 .customers-item {
-  width: calc((100% - 30px) / 1);
+  width: 190px;
   height: 88px;
   margin-bottom: 72px;
+  margin-left: 35px;
 }
 .customers-link {
   width: 100%;

@@ -1,16 +1,52 @@
-@media screen and (min-width: 768px){
-    .container {
-    width: 572px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
-/*------------- Customers------------------------*/
-.customers-list{
-    
+  /*------------- HERO------------------------*/
+  .hero{
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-tab-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-tab-2x.jpg);
+  }
 }
-.customers-item{
-    width: calc((100% - 30px) / 3);
-}
-.customers-link{
-   padding-left: 32px;
-   padding-right: 32px; 
+
+  .hero-title{
+    font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 40px;
+  }
+  /*------------- BENEFITS------------------------*/
+  .benefits-item{
+    width: calc((100% - 24px) / 2);
+      }
+  .benefits-title{
+    text-align: start;
+  }
+  /*------------- Customers------------------------*/
+  .customers {
+  }
+  .customers-list {
+    justify-content: start;
+  }
+  .customers-item {
+    width: calc((100% - 48) / 3);
+    margin-left: 24px;
+  }
+
+  .customers-link {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }

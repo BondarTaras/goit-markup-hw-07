@@ -1,5 +1,64 @@
-@media screen and (min-width: 1200px){
-    .container {
+@media screen and (min-width: 1200px) {
+  .container {
     width: 1158px;
+  }
+  /*------------- HERO------------------------*/
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desktop-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  /*------------- BENEFITS------------------------*/
+  .benefits-list {
+    flex-wrap: nowrap;
+  }
+
+  .benefits-icon {
+    display: inline-block;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    padding-top: 24px;
+    padding-left: 100px;
+    padding-bottom: 24px;
+    padding-right: 100px;
+  }
+  .benefits-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .benefits-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .benefits-after-title {
+    font-weight: 400;
+  }
+
+  /*------------- Customers------------------------*/
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
   }
 }

@@ -2,9 +2,15 @@
   .container {
     width: 458px;
   }
+  /*------------- BENEFITS------------------------*/
+
+
+  
   /*------------- Customers------------------------*/
+ .customers{
+  
+ }
   .customers-item {
-  width: calc((100% - 30px) / 2);
- 
+  margin-left: 16px; 
 }
 }
