@@ -52,13 +52,67 @@
   .benefits-after-title {
     font-weight: 400;
   }
-
+  /*------------- EXAMPLES------------------------*/
+  .examples {
+    padding-bottom: 120px;
+    display: block;
+  }
+  .examples-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .examples-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-titel);
+    margin-bottom: 72px;
+  }
+  /*------------- TEAM------------------------*/
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
   /*------------- Customers------------------------*/
+  .customers > .container {
+    width: 1158px;
+  }
   .customers {
     padding-top: 120px;
     padding-bottom: 120px;
   }
   .customers-list {
     flex-wrap: nowrap;
+  }
+  /*------------- FOOTER------------------------*/
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-text{
+    margin-bottom: 0;
+  }
+
+  .footer-logo{
+    justify-content: left;
+  }
+  .foter-info {
+  margin-right: 120px;
+}
+.foter-soc{
+   margin-right: 80px;
+}
+.footer-soc-list{
+  margin-bottom: 0;
+}
+  /*------------- modal window ------------------------*/
+  .modal {
+    min-height: 584px;
   }
 }

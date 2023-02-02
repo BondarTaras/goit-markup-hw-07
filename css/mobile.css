@@ -3,14 +3,26 @@
     width: 458px;
   }
   /*------------- BENEFITS------------------------*/
+  .benefits-after-title {
+    text-align: start;
+  }
+  /*------------- EXAMPLES------------------------*/
 
+  /*------------- TEAM------------------------*/
 
-  
   /*------------- Customers------------------------*/
- .customers{
-  
- }
+  .customers {
+  }
   .customers-item {
-  margin-left: 16px; 
+    margin-right: 16px;
+    margin-left: 0;
+  }
+
+/*------------- FOOTER------------------------*/
+
+/*------------- modal window ------------------------*/
+.modal{
+  width: 392px;
 }
+
 }

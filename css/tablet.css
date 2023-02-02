@@ -3,50 +3,80 @@
     width: 768px;
   }
   /*------------- HERO------------------------*/
-  .hero{
-    background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-tab-1x.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-tab-2x.jpg);
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab-1x.jpg);
   }
-}
-
-  .hero-title{
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tab-2x.jpg);
+    }
+  }
+  .hero-title {
     font-size: 56px;
-  line-height: 1.07;
-  margin-bottom: 40px;
+    line-height: 1.07;
+    margin-bottom: 40px;
   }
   /*------------- BENEFITS------------------------*/
-  .benefits-item{
+  .benefits-item {
     width: calc((100% - 24px) / 2);
-      }
-  .benefits-title{
+  }
+  .benefits-title {
     text-align: start;
   }
+  /*------------- EXAMPLES------------------------*/
+
+  /*------------- TEAM------------------------*/
+  .team {
+    padding-bottom: 104px;
+  }
+  .team-item {
+    margin-right: 24px;
+  }
   /*------------- Customers------------------------*/
-  .customers {
+  .customers > .container {
+    width: 606px;
   }
   .customers-list {
     justify-content: start;
   }
   .customers-item {
-    width: calc((100% - 48) / 3);
-    margin-left: 24px;
+    width: 168px;
+    margin-right: 24px;
   }
 
   .customers-link {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+/*------------- FOOTER------------------------*/
+.container-footer {
+  justify-content: start;
+  width: 606px;
+}
+.foter-info {
+  margin-right: 24px;
+}
+
+.foter-soc {
+  text-align: left;
+}
+.conteiner-sub {
+  text-align: left;
+}
+.foter-input {
+  width: 264px;
+  margin-right: 24px;
+  margin-bottom: 0;
+}
 }
