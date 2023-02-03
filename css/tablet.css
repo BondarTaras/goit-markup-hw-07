@@ -2,6 +2,74 @@
   .container {
     width: 768px;
   }
+  /*------------- HEADER------------------------*/
+  .header-navigation {
+    display: flex;
+    margin-right: auto;
+    gap: 40px;
+    margin-right: 118px;
+  }
+  .heder-logo {
+    margin-right: 123px;
+  }
+  .header-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-titel);
+    transition: color var(--transf);
+    position: relative;
+  }
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    left: 0;
+    bottom: -25px;
+  }
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--color-text);
+  }
+  .header-link:active {
+    color: var(--color-primary);
+  }
+  .header-cont {
+    flex-wrap: wrap;
+  }
+  .header-tel {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    margin-right: 40px;
+    transition: color var(--transf);
+  }
+  .header-tel:hover,
+  .header-tel:focus {
+    color: var(--color-primary);
+  }
+
+  .header-mail {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+    transition: color var(--transf);
+  }
+  .header-mail:hover,
+  .header-mail:focus {
+    color: var(--color-primary);
+  }
   /*------------- HERO------------------------*/
   .hero {
     background-image: linear-gradient(
@@ -59,24 +127,24 @@
     padding-right: 32px;
   }
 
-/*------------- FOOTER------------------------*/
-.container-footer {
-  justify-content: start;
-  width: 606px;
-}
-.foter-info {
-  margin-right: 24px;
-}
+  /*------------- FOOTER------------------------*/
+  .container-footer {
+    justify-content: start;
+    width: 606px;
+  }
+  .foter-info {
+    margin-right: 24px;
+  }
 
-.foter-soc {
-  text-align: left;
-}
-.conteiner-sub {
-  text-align: left;
-}
-.foter-input {
-  width: 264px;
-  margin-right: 24px;
-  margin-bottom: 0;
-}
+  .foter-soc {
+    text-align: left;
+  }
+  .conteiner-sub {
+    text-align: left;
+  }
+  .foter-input {
+    width: 264px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
 }
