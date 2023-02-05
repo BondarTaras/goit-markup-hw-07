@@ -2,6 +2,10 @@
   .container {
     width: 458px;
   }
+  /*------------- HEADER------------------------*/
+  .heder-logo{
+    margin-right: 249px;
+  }  
   /*------------- BENEFITS------------------------*/
   .benefits-after-title {
     text-align: start;

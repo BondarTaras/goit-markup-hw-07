@@ -70,6 +70,9 @@
   .header-mail:focus {
     color: var(--color-primary);
   }
+  .menu-mob-btn{
+    display: none;
+  }
   /*------------- HERO------------------------*/
   .hero {
     background-image: linear-gradient(
