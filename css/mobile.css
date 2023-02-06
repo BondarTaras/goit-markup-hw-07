@@ -3,9 +3,22 @@
     width: 458px;
   }
   /*------------- HEADER------------------------*/
-  .heder-logo{
+  .heder-logo {
     margin-right: 249px;
-  }  
+  }
+  .mob-menu {
+    padding: 0;
+  }
+  .mob-menu > .container {
+    padding: 40px;
+  }
+  .mob-menu-soc-list {
+    justify-content: start;
+    gap: 56px;
+  }
+  .mob-menu-tel {
+    font-size: 36px;
+  }
   /*------------- BENEFITS------------------------*/
   .benefits-after-title {
     text-align: start;
@@ -22,11 +35,10 @@
     margin-left: 0;
   }
 
-/*------------- FOOTER------------------------*/
+  /*------------- FOOTER------------------------*/
 
-/*------------- modal window ------------------------*/
-.modal{
-  width: 392px;
-}
-
+  /*------------- modal window ------------------------*/
+  .modal {
+    width: 392px;
+  }
 }

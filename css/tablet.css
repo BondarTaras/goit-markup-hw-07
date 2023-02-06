@@ -3,11 +3,15 @@
     width: 768px;
   }
   /*------------- HEADER------------------------*/
+  .header {
+    padding-bottom: 22px;
+  }
   .header-navigation {
     display: flex;
     margin-right: auto;
+  }
+  .header-navigation:not(:last-child) {
     gap: 40px;
-    margin-right: 118px;
   }
   .heder-logo {
     margin-right: 123px;
@@ -30,7 +34,7 @@
     background-color: #404bbf;
     border-radius: 2px;
     left: 0;
-    bottom: -25px;
+    bottom: -26px;
   }
   .header-link:hover,
   .header-link:focus {
@@ -45,11 +49,10 @@
   .header-tel {
     display: block;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--color-text);
-    margin-right: 40px;
     transition: color var(--transf);
   }
   .header-tel:hover,
@@ -60,8 +63,8 @@
   .header-mail {
     display: block;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--color-text);
     transition: color var(--transf);
@@ -70,7 +73,7 @@
   .header-mail:focus {
     color: var(--color-primary);
   }
-  .menu-mob-btn{
+  .menu-mob-btn {
     display: none;
   }
   /*------------- HERO------------------------*/
@@ -150,4 +153,10 @@
     margin-right: 24px;
     margin-bottom: 0;
   }
+  /*------------- modal window ------------------------*/
+  .modal {
+  width: 408px;
 }
+}
+
+

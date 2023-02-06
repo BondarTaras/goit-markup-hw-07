@@ -67,7 +67,7 @@ img {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid #f4f4fd;
+  
 }
 .heder-logo {
   font-family: "Raleway", sans-serif;
@@ -173,6 +173,7 @@ img {
   margin-bottom: 40px;
 }
 .mob-menu-cont {
+  max-width: 100%;
 }
 .mob-menu-mail {
   display: inline-block;
@@ -188,9 +189,9 @@ img {
   color: var(--color-primary);
 }
 .mob-menu-tel {
-  display: inline-block;
+  display: block;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 22px;
   line-height: 1.11;
   text-transform: capitalize;
   color: #434455;
@@ -202,7 +203,8 @@ img {
 }
 .mob-menu-soc-list {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
+  /* gap: 56px; */
 }
 .mob-menu-soc-item {
   width: 40px;
@@ -719,7 +721,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  width: 100%;
   min-height: 586px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
